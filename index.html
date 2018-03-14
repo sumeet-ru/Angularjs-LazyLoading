@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Dynamic load controller</title>
+  </head>
+  <body>
+
+    <div ng-app="LazyLoad">
+      <ng-include src="'app/views/navigation.html'"></ng-include>
+      <div ng-view></div>
+
+    </div>
+
+  </body>
+  <script src="js/angular.min.js" charset="utf-8"></script>
+  <script src="js/angular-route.min.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script data-main="require_config.js" src="js/require.min.js" charset="utf-8"></script>
+  <style>
+    .navigation-margin a{
+      margin: 20px;
+    }
+  </style>
+</html>
